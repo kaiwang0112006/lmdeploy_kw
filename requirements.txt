@@ -2,5 +2,5 @@ sentencepiece
 streamlit
 transformers>=4.34
 einops
-gradio==4.13.0
+gradio
 lmdeploy[all]==0.3.0
