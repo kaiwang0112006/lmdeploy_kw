@@ -1,0 +1,6 @@
+sentencepiece
+streamlit
+transformers>=4.34
+einops
+gradio==4.13.0
+lmdeploy[all]==0.3.0
