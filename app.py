@@ -12,5 +12,5 @@ if not os.path.exists(base_path):
     os.system(f'git clone https://code.openxlab.org.cn/OpenLMLab/internlm2-chat-1.8b.git {base_path}')
     os.system(f'cd {base_path} && git lfs pull')
 
-    os.system("nohup lmdeploy serve api_server  /root/internlm2-chat-1_8b --model-format hf  --quant-policy 0  --server-name 0.0.0.0 --server-port 23333 --tp 1 &")
+    os.system("nohup lmdeploy serve api_server  %s --model-format hf  --quant-policy 0  --server-name 0.0.0.0 --server-port 23333 --tp 1 &" % base_path)
     os.system("lmdeploy serve api_client http://localhost:7860")
