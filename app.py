@@ -3,7 +3,7 @@ import torch
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 
-base_path = './internlm2-chat-1.8b'
+base_path = './internlm2-chat-1_8b'
 
 if not os.path.exists(base_path):
     # download repo to the base_path directory using git
